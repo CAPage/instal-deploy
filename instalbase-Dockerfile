@@ -1,0 +1,14 @@
+FROM instal-clingo
+COPY . /code
+WORKDIR /code
+
+WORKDIR /code/instal-stable
+RUN cp /clingo-5.1.0/build/release/python/clingo.so instal/
+RUN pip install -r requirements.txt
+RUN pip install .
+
+WORKDIR /code/instal-rest
+RUN pip install -r requirements.txt
+RUN pip install .
+
+CMD ["echo", "Extend this docker file to run the program."]

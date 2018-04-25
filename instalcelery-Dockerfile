@@ -1,0 +1,7 @@
+FROM instal-base
+
+WORKDIR /code/instal-rest/instalrest/instalcelery/
+
+ENV INSTAL_CELERY_WORKERS 3
+
+CMD celery -A instalcelery -c ${INSTAL_CELERY_WORKERS} worker

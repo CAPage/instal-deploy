@@ -1,0 +1,29 @@
+version: '2'
+services:
+    instal-db:
+        image: postgres
+        expose:
+            - "5432"
+        environment:
+            - POSTGRES_PASSWORD=instal
+            - POSTGRES_USER=instal
+            - POSTGRES_DB=instal-rest-v1
+
+    instal-rabbit:
+        image: rabbitmq
+        expose:
+            - "5672"
+        environment:
+            - RABBITMQ_DEFAULT_USER=instal
+            - RABBITMQ_DEFAULT_PASS=instal
+
+    instal-rest:
+        image: instal-gunicorn
+        links:
+          - "instal-db"
+          - "instal-rabbit"
+    
+    instal-celery:
+        image: instal-celery
+        links:
+          - "instal-rabbit"

@@ -1,0 +1,11 @@
+version: '2'
+services:
+    instal-rest:
+        environment:
+            - GUNICORN_WORKERS=5
+        ports:
+            - "5000:8000"
+    
+    instal-celery:
+        environment:
+            - INSTAL_CELERY_WORKERS=3

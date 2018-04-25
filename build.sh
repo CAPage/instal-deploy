@@ -1,0 +1,1 @@
+docker build -f instalbase-Dockerfile -t instal-base . && docker build -f instalrestAPI-Dockerfile -t instal-rest . && docker build -f instalcelery-Dockerfile -t instal-celery . && docker build -f instalgunicorn-Dockerfile -t instal-gunicorn .

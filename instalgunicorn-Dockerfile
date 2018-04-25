@@ -1,0 +1,6 @@
+FROM instal-base
+
+WORKDIR /code/instal-rest/
+ENV GUNICORN_WORKERS=5
+
+CMD gunicorn --bind=0.0.0.0 -w $GUNICORN_WORKERS api:app_modified

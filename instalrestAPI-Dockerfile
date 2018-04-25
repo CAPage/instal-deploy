@@ -1,0 +1,9 @@
+FROM instal-base
+
+WORKDIR /code/instal-rest
+
+ENV INSTAL_FLASK_REST_THREADS 1
+ENV INSTAL_FLASK_REST_PORT 5000
+ENV INSTAL_FLASK_REST_DEBUG False
+
+CMD ["python", "api.py"]
