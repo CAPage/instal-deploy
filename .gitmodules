@@ -1,0 +1,6 @@
+[submodule "instal-stable"]
+	path = instal-stable
+	url = https://github.com/instsuite/instal-stable
+[submodule "instal-rest"]
+	path = instal-rest
+	url = https://github.com/instsuite/instal-rest
