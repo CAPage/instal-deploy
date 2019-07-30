@@ -20,6 +20,3 @@ For deploying InstAL-REST easily. This is the recommended way to deploy an insta
 # More advanced setup
 * You can change the production and development configuration options using docker-compose.{dev, prod}.yml. 
 * You can use docker-compose scale to increase the number of each type of docker container. For instance: "docker-compose scale instal-rest=2 instal-celery=3" will run two HTTP server containers and 3 celery containers.
-
-
-
