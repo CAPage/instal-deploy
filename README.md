@@ -8,14 +8,14 @@ For deploying InstAL-REST easily. This is the recommended way to deploy an insta
 * InstAL-Celery - The container running the celery workers that actually run InstAL.
 
 # Instructions
-* Clone this repository using the command 'git clone --recursive <repoAddress>'
+* Clone repository using the command 'git clone --recursive <repoAddress>'
 * cd into the project's root directory
 * Run the shell script ./fullbuild.sh
 * Run one of the "up" shell scripts, either dev or production.
   
 ## Accessing the service (default configuration)
-* In development mode (while running dev_up.sh), instal listens on port **5000**
-* In production mode (while running prod_up.sh), instal listens on port **46501**
+* In development mode (while running dev_up.sh), INSTAL listens on port **5000**
+* In production mode (while running prod_up.sh), INSTAL listens on port **46501**
 
 # More advanced setup
 * You can change the production and development configuration options using docker-compose.{dev, prod}.yml. 
