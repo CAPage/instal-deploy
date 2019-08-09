@@ -8,7 +8,7 @@ For deploying InstAL-REST easily. This is the recommended way to deploy an insta
 * InstAL-Celery - The container running the celery workers that actually run InstAL.
 
 # Instructions
-* Clone repository using the command 'git clone --recursive <repoAddress>'
+* Clone repository using the command 'git clone --recursive < repoAddress >'
 * cd into the project's root directory
 * Run the shell script ./fullbuild.sh
 * Run one of the "up" shell scripts, either dev or production.
